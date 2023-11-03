@@ -1,0 +1,389 @@
+body {
+    min-height: 100vh;
+    background: url("../image/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page {
+    height: 100%;
+}
+
+.page-header {
+    background-color: #f7abf0c2;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    gap: 2rem;
+}
+
+.page-header div {
+    border-radius: 50%;
+    padding: 2px 2px;
+}
+
+.page-header button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+}
+
+.page-header button img {
+    height: 30px;
+}
+
+.page-content {
+    padding: 20px 7rem 0px 7rem;
+    gap: 20px;
+}
+
+.page-content-top,
+.page-content-bottom {
+    gap: 7rem;
+}
+
+.add-image {
+    /* width: 350px; */
+    height: 200px;
+    background-color: #E59CD7;
+    border-radius: 20px;
+    border: 2px solid #E0E0E0;
+}
+
+.add-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.daily-mode {
+    background-color: #FAFAFA;
+    border: 1px solid #E59CD7;
+    border-radius: 20px;
+}
+
+.mode-header {
+    padding-top: 4px;
+    height: 40px;
+    color: #8c7e9b;
+}
+
+.mode-header h5 {
+    font-size: 28px;
+    padding: 10px 0px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+}
+
+.mode-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-content button {
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 20px;
+}
+
+.mode-content button img {
+    width: 45px;
+    border-radius: 15px;
+}
+
+
+.diary-text {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #E59CD7;
+    border-radius: 20px;
+    max-height: 200px;
+    /* İçerik sığmazsa maksimum yüksekliği ayarlayın */
+    overflow: hidden;
+    /* Kaydırma çubuğunu etkinleştirin */
+}
+
+.editor {
+    width: 100%;
+    padding: 20px 5px 0px 5px;
+    /* İçeriğin boyutunu kontrol etmek için */
+}
+
+.ck-content {
+    height: 90px;
+    overflow: auto;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    background: rgba(255, 255, 255, .1) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.ck-toolbar {
+    background: rgba(255, 255, 255, .1) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.ck-balloon-panel {
+    display: none !important;
+}
+
+/* .diary-text {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #E59CD7;
+    border-radius: 20px;
+}
+
+.editor {
+    max-width: 680px;
+} */
+
+.add-btn {
+    margin: 10px 20px;
+}
+
+.add-btn button {
+    border: none;
+    color: #ffffff;
+    background-color: #a57cce;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.calendar-box {
+    display: flex;
+    width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #E59CD7;
+    border-radius: 20px;
+}
+
+/* .calendar h5 {
+    margin: 0;
+    padding: 10px 30px;
+    color: #C1002E;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Krona One',
+        sans-serif;
+} */
+
+.page-header div:hover,
+.music-btn.active,
+.gallery-btn.active,
+.dashboard-btn.active,
+.login-btn.active {
+    background-color: palevioletred;
+}
+
+.modal-content {
+    border-radius: 20px !important;
+    box-shadow: 0px 0px 15px rgb(22, 173, 211);
+}
+
+.modal-header {
+    border: none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    height: 0;
+    background-color: pink;
+}
+
+.modal-body button {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    padding: 12px;
+    --bs-btn-close-opacity: 1 !important;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+.modal-body button:hover {
+    opacity: 1;
+}
+
+.modal-body button:focus {
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+.day-image {
+    background-color: pink;
+    height: 150px;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.day-text {
+    padding: 10px 2rem;
+}
+
+.modal-body {
+    padding: 0px !important;
+    margin: 0 !important;
+}
+
+.mybuton {
+    background-color: #C1002E;
+    color: white;
+    width: 150px;
+    padding: 5px 5px;
+    outline: none;
+    border: none;
+}
+
+.progress {
+    width: 300px;
+    height: 20px !important;
+    border-radius: 20px !important;
+}
+
+.progress-bar {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: palevioletred !important;
+}
+
+.progress-bar p {
+    margin: 0;
+}
+
+.mode-degree {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mode-icon {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    cursor: pointer;
+}
+
+.mode-icon img {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgb(233, 27, 95);
+}
+
+/* .modesPost {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.posts {
+    flex-wrap: wrap;
+    height: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.modesPost .mode-img img {
+    width: 40px;
+}
+
+.mode-post {
+    position: relative;
+    display: flex;
+    font-size: 12px;
+    width: 300px !important;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(90deg, #b939adc2, transparent);
+    padding: 10px 20px;
+}
+
+.post-content {
+    overflow: hidden;
+    height: 100px;
+}
+
+.page-content p {
+    margin: 0;
+    height: 100%;
+}
+
+.up-down {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    cursor: pointer;
+}
+
+.mode-postImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.mode-postImg img {
+
+    height: 60px;
+    width: 100%;
+}
+
+.mode-img {
+    width: 696px;
+    margin: 0 auto;
+    padding: 0 1rem 0 1rem;
+    /* height: 100px; */
+    border: 5px solid #d049d4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 60px !important;
+}
+
+.wheel {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 100%;
+    /* Genişlik 100% olarak ayarlandı */
+    animation-name: roll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes roll {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(500px, 0) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

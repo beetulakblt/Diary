@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wheel"></div>
+    </div>
+
+    <style>
+      /* ROLLING */
+      @keyframes roll {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+
+        50% {
+          transform: translate(500px, 0) rotate(360deg);
+        }
+
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+      }
+
+      .container {
+        width: 696px;
+        margin: 0 auto;
+        padding: 1rem 1rem 0 1rem;
+
+        border: 20px solid #ccc;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-image: repeating-linear-gradient(
+          to right,
+          #ddd,
+          #ddd 2px,
+          #ccc 2px,
+          #ccc 4px
+        ); /* determines size */
+
+        border-image-slice: 1;
+      }
+
+      .wheel {
+        width: 5rem;
+        height: 5rem;
+        background-color: pink;
+        border: 20px solid paleturquoise;
+        border-top: 20px solid blanchedalmond;
+        border-radius: 50%;
+
+        /* Call animation in action */
+        animation-name: roll;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+      }
+    </style>
+  </body>
+</html>
